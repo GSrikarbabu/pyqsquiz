@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPSC PYQ's</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            animation: backgroundAnimation 10s infinite alternate;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background: linear-gradient(135deg, #6a11cb, #2575fc); }
+            100% { background: linear-gradient(135deg, #43cea2, #185a9d); }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 2s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .button-container {
+            display: grid;
+            gap: 15px;
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: center;
+            animation: slideUp 2s;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .nav-button {
+            background: #fff;
+            color: #2575fc;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: popIn 1s ease-in-out;
+        }
+
+        @keyframes popIn {
+            from { opacity: 0; transform: scale(0.5); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .nav-button:hover {
+            transform: translateY(-5px);
+            background: #2575fc;
+            color: #fff;
+        }
+
+        .nav-button:active {
+            transform: scale(0.95);
+        }
+
+        footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+            animation: fadeIn 3s;
+        }
+    </style>
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</head>
+<body>
+    <h1>UPSC Previous Questions</h1>
+    <div class="button-container">
+        <button class="nav-button" onclick="navigateTo('2024.html')">2024</button>
+        <button class="nav-button" onclick="navigateTo('page2.html')">2023</button>
+        <button class="nav-button" onclick="navigateTo('page3.html')">2022</button>
+        <button class="nav-button" onclick="navigateTo('page4.html')">2021</button>
+        <button class="nav-button" onclick="navigateTo('page4.html')">2020</button>
+        <button class="nav-button" onclick="navigateTo('page4.html')">2019</button>
+        <button class="nav-button" onclick="navigateTo('page4.html')">2018</button>
+        <button class="nav-button" onclick="navigateTo('page4.html')">2017</button>
+        <button class="nav-button" onclick="navigateTo('page4.html')">2016</button>
+    </div>
+</body>
+</html>
